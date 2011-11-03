@@ -1,8 +1,7 @@
-
 /*
   Name: lib.h, header file. 
   Copyright: 
-  Author: Surya Kasturi
+  Author: Surya K
   Date: 31/10/11 23:29
   Description: contains functions required to perform sudoku solver.
 */
