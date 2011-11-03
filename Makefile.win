@@ -1,0 +1,51 @@
+# Project: Sudoku Solver
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe -D__DEBUG__
+CC   = gcc.exe -D__DEBUG__
+WINDRES = windres.exe
+RES  = Sudoku_private.res
+OBJ  = main.o check.o BruteForce.o io.o check_row_column.o check_box_9x9.o valid.o $(RES)
+LINKOBJ  = main.o check.o BruteForce.o io.o check_row_column.o check_box_9x9.o valid.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  -g3 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = Sudoku.exe
+CXXFLAGS = $(CXXINCS)   -g3
+CFLAGS = $(INCS)   -g3
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Sudoku.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "Sudoku.exe" $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+check.o: check.c
+	$(CC) -c check.c -o check.o $(CFLAGS)
+
+BruteForce.o: BruteForce.c
+	$(CC) -c BruteForce.c -o BruteForce.o $(CFLAGS)
+
+io.o: io.c
+	$(CC) -c io.c -o io.o $(CFLAGS)
+
+check_row_column.o: check_row_column.c
+	$(CC) -c check_row_column.c -o check_row_column.o $(CFLAGS)
+
+check_box_9x9.o: check_box_9x9.c
+	$(CC) -c check_box_9x9.c -o check_box_9x9.o $(CFLAGS)
+
+valid.o: valid.c
+	$(CC) -c valid.c -o valid.o $(CFLAGS)
+
+Sudoku_private.res: Sudoku_private.rc 
+	$(WINDRES) -i Sudoku_private.rc --input-format=rc -o Sudoku_private.res -O coff 
