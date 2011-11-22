@@ -1,4 +1,3 @@
-
 /*
   Name: lib.h, header file. 
   Copyright: 
@@ -15,7 +14,7 @@ int BruteForce (void);
 int check (int i, int j, int n);
 int check_row (int i, int j, int n);
 int check_column (int i, int j, int n);
-int check_box_9x9 (int i, int j, int n);
+int check_box (int i, int j, int n);
 int input (void);
 int output (void);
 
