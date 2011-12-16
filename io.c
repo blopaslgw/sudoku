@@ -11,13 +11,12 @@ int input (void)
     char str[100];
     FILE* ip_file;
     
-    printf("Welcome to Sudoku Solver.\n");
-    printf("- There are still some major bugs to be resolved. sorry!\n\n");
-    
+    printf("Welcome to Sudoku Solver.\n\n");
+    printf("Author: Surya\n\n");
     printf("Rules to follow before entering input\n");
-    printf("       1. Enter 0 in place of empty location\n");
-    printf("       2. Enter the file name with extension & address\n");
-	printf("       Ex: F:\folder1\foo1\input.txt \n\n\n");
+    printf("\t1. Enter 0 in place of empty location\n");
+    printf("\t2. Enter the file name with extension & address\n");
+	printf("\tEx: F:\\folder1\\foo1\\foo_input.txt \n\n\n");
     
     //Take file location as input
     printf("File: ");
