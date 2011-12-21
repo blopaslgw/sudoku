@@ -1,8 +1,7 @@
-
   Name: Sudoku Solver
-  Author: suryak
+  Author: surya
   Description: Sudoku puzzle solver using Brute Force Algorithm
-  Website: http://github.com/spkon/sudoku
+  Website: http://github.com/ksurya/sudoku
 
 
   Platforms : Windows OS
