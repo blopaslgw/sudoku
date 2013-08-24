@@ -1,6 +1,3 @@
-  Latest update: Sudoku solver using constraint programming technique (written in python)
-                 can be found at the below link.
-                 (https://gist.github.com/3940679)
+This code uses bruteforce algorithm!
 
-  Name: Sudoku Solver
-  Description: Sudoku puzzle solver using Brute Force Algorithm
+Latest update: Sudoku solver using constraint programming technique (written in python) can be found at https://gist.github.com/3940679
